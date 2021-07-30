@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<style id="applicationStylesheet" type="text/css">
+    .mediaViewInfo {
+        --web-view-name: 01 Landing;
+        --web-view-id: ID01_Landing;
+        --web-scale-on-resize: true;
+        --web-enable-deep-linking: true;
+    }
+
+    :root {
+        --web-view-ids: ID01_Landing;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+
+    #ID01_Landing {
+        position: absolute;
+        width: 1366px;
+        height: 1536px;
+        background-color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+        --web-view-name: 01 Landing;
+        --web-view-id: ID01_Landing;
+        --web-scale-on-resize: true;
+        --web-enable-deep-linking: true;
+    }
+
+    #Tela_1 {
+        position: absolute;
+        width: 1366px;
+        height: 768px;
+        left: 0px;
+        top: 0px;
+        overflow: visible;
+    }
+
+    #BG_tela_1 {
+        fill: rgba(69, 95, 93, 1);
+    }
+
+    .BG_tela_1 {
+        overflow: visible;
+        position: absolute;
+        width: 1366px;
+        height: 768px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Role_a_tela_para_baixo_e_preen {
+        left: 416px;
+        top: 526.52px;
+        position: absolute;
+        overflow: visible;
+        width: 533px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    #Obrigado_por_ser_um_dos_primei {
+        left: 162.592px;
+        top: 339px;
+        position: absolute;
+        overflow: visible;
+        width: 1041px;
+        white-space: nowrap;
+        text-align: center;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        color: rgba(192, 229, 216, 1);
+    }
+
+    #LOGO {
+        position: relative;
+        width: 123px;
+        height: 114.219px;
+        left: 45%;
+        top: 50%;
+        overflow: visible;
+        margin-top: 5%;
+    }
+
+    #TROCA_DE_CASAS {
+        left: 0px;
+        top: 95.219px;
+        position: absolute;
+        overflow: visible;
+        width: 124px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16.271900177001953px;
+        color: rgba(192, 229, 216, 1);
+    }
+
+    #Trazado_1 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_1 {
+        overflow: visible;
+        position: absolute;
+        width: 44.304px;
+        height: 63.4px;
+        left: 12.72px;
+        top: 22.746px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_2 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_2 {
+        overflow: visible;
+        position: absolute;
+        width: 55.008px;
+        height: 34.169px;
+        left: 56.48px;
+        top: 21.7px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_3 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_3 {
+        overflow: visible;
+        position: absolute;
+        width: 55.008px;
+        height: 34.169px;
+        left: 66.911px;
+        top: 53.022px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_4 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_4 {
+        overflow: visible;
+        position: absolute;
+        width: 7.202px;
+        height: 7.188px;
+        left: 112.306px;
+        top: 39.852px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_5 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_5 {
+        overflow: visible;
+        position: absolute;
+        width: 7.188px;
+        height: 7.188px;
+        left: 60.006px;
+        top: 61.652px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_6 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_6 {
+        overflow: visible;
+        position: absolute;
+        width: 31.57px;
+        height: 18.446px;
+        left: 73.268px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #FLECHA {
+        position: absolute;
+        width: 16.4px;
+        height: 34.5px;
+        left: 675px;
+        top: 605px;
+        overflow: visible;
+    }
+
+    #Lnea_1 {
+        fill: transparent;
+        stroke: rgba(255, 255, 255, 1);
+        stroke-width: 2px;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+        stroke-miterlimit: 10;
+        shape-rendering: auto;
+    }
+
+    .Lnea_1 {
+        overflow: visible;
+        position: absolute;
+        width: 2px;
+        height: 32.3px;
+        left: 8.2px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_18 {
+        fill: rgba(255, 255, 255, 1);
+    }
+
+    .Trazado_18 {
+        overflow: visible;
+        position: absolute;
+        width: 16.4px;
+        height: 10.2px;
+        left: 0px;
+        top: 24.3px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Tela_2 {
+        position: absolute;
+        width: 1446.934px;
+        height: 778.812px;
+        left: 0px;
+        top: 768px;
+        overflow: visible;
+    }
+
+    #BG_tela_2 {
+        fill: rgba(169, 199, 177, 1);
+    }
+
+    .BG_tela_2 {
+        position: absolute;
+        overflow: visible;
+        width: 686px;
+        height: 769px;
+        left: 0px;
+        top: 0px;
+    }
+
+    #Rectngulo_10 {
+        fill: rgba(69, 95, 93, 1);
+    }
+
+    .Rectngulo_10 {
+        position: absolute;
+        overflow: visible;
+        width: 547px;
+        height: 240.3px;
+        left: 139px;
+        top: 92.4px;
+    }
+
+    #Se_quiser_saber_mais_sobre_o_f {
+        left: 182.622px;
+        top: 366.137px;
+        position: absolute;
+        overflow: visible;
+        width: 410px;
+        white-space: nowrap;
+        line-height: 24px;
+        margin-top: -2px;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(69, 95, 93, 1);
+    }
+
+    #Clique_aqui {
+        position: absolute;
+        width: 95px;
+        height: 24px;
+        left: 215.622px;
+        top: 390.137px;
+        overflow: visible;
+    }
+
+    #clique_aqui {
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        overflow: visible;
+        width: 96px;
+        white-space: nowrap;
+        line-height: 24px;
+        margin-top: -2px;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 1);
+        text-decoration: underline;
+    }
+
+    #ICONE_EMAIL {
+        position: absolute;
+        width: 36.1px;
+        height: 27.5px;
+        left: 242px;
+        top: 461.8px;
+        overflow: visible;
+    }
+
+    #Trazado_13 {
+        fill: rgba(69, 95, 93, 1);
+    }
+
+    .Trazado_13 {
+        overflow: visible;
+        position: absolute;
+        width: 36.1px;
+        height: 27.5px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_14 {
+        fill: rgba(69, 95, 93, 1);
+    }
+
+    .Trazado_14 {
+        overflow: visible;
+        position: absolute;
+        width: 27.552px;
+        height: 10.872px;
+        left: 4.253px;
+        top: 4.253px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #ICONE_WHATSAPP {
+        position: absolute;
+        width: 37.133px;
+        height: 36.525px;
+        left: 185.806px;
+        top: 456.375px;
+        overflow: visible;
+    }
+
+    #Trazado_11 {
+        fill: rgba(69, 95, 93, 1);
+    }
+
+    .Trazado_11 {
+        overflow: visible;
+        position: absolute;
+        width: 22.517px;
+        height: 20.6px;
+        left: 7.484px;
+        top: 7.925px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_12 {
+        fill: rgba(69, 95, 93, 1);
+    }
+
+    .Trazado_12 {
+        overflow: visible;
+        position: absolute;
+        width: 37.133px;
+        height: 36.525px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #No_leva_mais_de_10_minutos_As_ {
+        left: 182.138px;
+        top: 253.951px;
+        position: absolute;
+        overflow: visible;
+        width: 421px;
+        white-space: nowrap;
+        line-height: 24px;
+        margin-top: -2px;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    #Clique___________para__preench {
+        left: 182.136px;
+        top: 128.35px;
+        position: absolute;
+        overflow: visible;
+        width: 412px;
+        white-space: nowrap;
+        line-height: 54px;
+        margin-top: -4.5px;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        color: rgba(192, 229, 216, 1);
+    }
+
+    #Aqui {
+        position: absolute;
+        width: 86px;
+        height: 53px;
+        left: 317.136px;
+        top: 128.35px;
+        overflow: visible;
+    }
+
+    #aqui {
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        overflow: visible;
+        width: 87px;
+        white-space: nowrap;
+        line-height: 54px;
+        margin-top: -4.5px;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        color: rgba(255, 255, 255, 1);
+        text-decoration: underline;
+    }
+
+    #SLIDER {
+        position: absolute;
+        width: 683px;
+        height: 656px;
+        left: 683px;
+        top: 0px;
+        overflow: visible;
+    }
+
+    #Footer {
+        position: absolute;
+        width: 1446.934px;
+        height: 124.812px;
+        left: 0px;
+        top: 654px;
+        overflow: visible;
+    }
+
+    #Footer_bg {
+        fill: rgba(69, 95, 93, 1);
+    }
+
+    .Footer_bg {
+        position: absolute;
+        overflow: visible;
+        width: 1366px;
+        height: 115px;
+        left: 0px;
+        top: 0px;
+    }
+
+    #Copyright_2021 {
+        left: 1135px;
+        top: 56.859px;
+        position: absolute;
+        overflow: visible;
+        width: 92px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(192, 229, 216, 1);
+    }
+
+    #Logo_footer {
+        position: absolute;
+        width: 76px;
+        height: 70.201px;
+        left: 139px;
+        top: 22.014px;
+        overflow: visible;
+    }
+
+    #TROCA_DE_CASAS_bj {
+        left: 0px;
+        top: 59.201px;
+        position: absolute;
+        overflow: visible;
+        width: 77px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Niveau Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10.06820011138916px;
+        color: rgba(192, 229, 216, 1);
+    }
+
+    #Grupo_7 {
+        position: absolute;
+        width: 67.575px;
+        height: 53.945px;
+        left: 8.038px;
+        top: 0px;
+        overflow: visible;
+    }
+
+    #Grupo_5 {
+        position: absolute;
+        width: 67.575px;
+        height: 40.518px;
+        left: 0px;
+        top: 13.427px;
+        overflow: visible;
+    }
+
+    #Trazado_7 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_7 {
+        overflow: visible;
+        position: absolute;
+        width: 27.38px;
+        height: 39.2px;
+        left: 0px;
+        top: 0.659px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Grupo_4 {
+        position: absolute;
+        width: 40.328px;
+        height: 40.518px;
+        left: 27.247px;
+        top: 0px;
+        overflow: visible;
+    }
+
+    #Trazado_8 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_8 {
+        overflow: visible;
+        position: absolute;
+        width: 33.993px;
+        height: 21.142px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Trazado_9 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_9 {
+        overflow: visible;
+        position: absolute;
+        width: 33.993px;
+        height: 21.142px;
+        left: 6.335px;
+        top: 19.376px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Elipse_1 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Elipse_1 {
+        position: absolute;
+        overflow: visible;
+        width: 4.4px;
+        height: 4.4px;
+        left: 61.661px;
+        top: 11.259px;
+    }
+
+    #Elipse_2 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Elipse_2 {
+        position: absolute;
+        overflow: visible;
+        width: 4.4px;
+        height: 4.4px;
+        left: 29.361px;
+        top: 24.759px;
+    }
+
+    #Grupo_6 {
+        position: absolute;
+        width: 19.675px;
+        height: 11.407px;
+        left: 37.414px;
+        top: 0px;
+        overflow: visible;
+    }
+
+    #Trazado_10 {
+        fill: rgba(192, 229, 216, 1);
+    }
+
+    .Trazado_10 {
+        overflow: visible;
+        position: absolute;
+        width: 19.675px;
+        height: 11.407px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Linha_footer {
+        fill: transparent;
+        stroke: rgba(192, 229, 216, 1);
+        stroke-width: 20px;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+        stroke-miterlimit: 10;
+        shape-rendering: auto;
+    }
+
+    .Linha_footer {
+        overflow: visible;
+        position: absolute;
+        width: 385.604px;
+        height: 133.901px;
+        left: 1073px;
+        top: 2px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    #Linha_central {
+        position: absolute;
+        width: 2394.4px;
+        height: 767.452px;
+        left: -586px;
+        top: 131px;
+        overflow: visible;
+    }
+
+    #Trazado_20 {
+        fill: transparent;
+        stroke: rgba(192, 229, 216, 1);
+        stroke-width: 20px;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+        stroke-miterlimit: 10;
+        shape-rendering: auto;
+    }
+
+    .Trazado_20 {
+        overflow: visible;
+        position: absolute;
+        width: 2405.044px;
+        height: 787.502px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+</style>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  Document Title
+=============================================-->
+    <title>YoCasas | Troca de Casas</title>
+    <!--  Favicons
+=============================================-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  Stylesheets
+=============================================
+-->
+    <!-- Default stylesheets-->
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="style/css_002.css" rel="stylesheet">
+    <link href="style/css_003.css" rel="stylesheet">
+    <link href="style/css.css" rel="stylesheet">
+    <link href="style/animate.css" rel="stylesheet">
+    <link href="style/font-awesome.css" rel="stylesheet">
+    <link href="style/et-line-font.css" rel="stylesheet">
+    <link href="style/flexslider.css" rel="stylesheet">
+    <link href="style/owl.css" rel="stylesheet">
+    <link href="style/owl_002.css" rel="stylesheet">
+    <link href="style/magnific-popup.css" rel="stylesheet">
+    <link href="style/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="style/style.css" rel="stylesheet">
+    <link id="color-scheme" href="style/default.css" rel="stylesheet">
+    <style>
+        @media print {
+            #ghostery-tracker-tally {
+                display: none !important
+            }
+        }
+    </style>
+    <script type="text/javascript" charset="UTF-8" src="style/common.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="style/util.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="style/common.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="style/util.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="style/AuthenticationService.Authenticate"></script>
+    <script type="text/javascript" charset="UTF-8" src="style/stats.js">
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" data-new-gr-c-s-check-loaded="8.880.0"
+    data-gr-ext-installed="">
+    <main>
+        <div class="page-loader" style="display: none;">
+            <div class="loader" style="display: none;">Loading...</div>
+        </div>
+        <section class="home-section home-full-height bg-dark bg-gradient" id="home"
+            data-background="assets/images/section-10.jpg"
+            style="height: 976px; background-image: url(&quot;assets/images/section-10.jpg&quot;);">
+            <div class="titan-caption">
+                <div class="">
+                    <div id="LOGO" class="LOGO">
+                        <div id="TROCA_DE_CASAS">
+                            <span>TROCA DE CASAS</span>
+                        </div>
+                        <svg class="Trazado_1" viewBox="12.72 22.7 44.304 63.4">
+                            <path id="Trazado_1"
+                                d="M 30.20000076293945 57.09999847412109 L 13.30000019073486 28.60000038146973 C 11.69999980926514 26 13.60000038146973 22.70000076293945 16.70000076293945 22.70000076293945 C 18.10000038146973 22.70000076293945 19.40000152587891 23.40000152587891 20.10000038146973 24.70000076293945 L 33.09999847412109 47 C 33.89999771118164 48.40000152587891 35.89999771118164 48.40000152587891 36.59999847412109 47 L 49.59999847412109 24.60000038146973 C 50.29999923706055 23.39999961853027 51.59999847412109 22.70000076293945 53 22.70000076293945 L 53.09999847412109 22.70000076293945 C 56.09999847412109 22.70000076293945 58 26 56.5 28.60000038146973 L 39.40000152587891 57.20000076293945 C 39 57.79999923706055 38.80000305175781 58.5 38.80000305175781 59.20000076293945 L 38.80000305175781 82.19999694824219 C 38.80000305175781 84.39999389648438 37.00000381469727 86.09999847412109 34.90000152587891 86.09999847412109 L 34.70000076293945 86.09999847412109 C 32.5 86.09999847412109 30.80000114440918 84.29999542236328 30.80000114440918 82.19999694824219 L 30.80000114440918 59.09999847412109 C 30.79999923706055 58.40000152587891 30.60000038146973 57.70000076293945 30.20000076293945 57.09999847412109">
+                            </path>
+                        </svg>
+                        <svg class="Trazado_2" viewBox="56.48 21.654 55.008 34.169">
+                            <path id="Trazado_2"
+                                d="M 79.69999694824219 31.60000038146973 C 88.59999847412109 27.89999961853027 98 29.70000076293945 104.6999969482422 35.40000152587891 C 105.8999938964844 36.40000152587891 107.5 36.60000228881836 108.8999938964844 36 L 108.8999938964844 36 C 111.7999954223633 34.79999923706055 112.3999938964844 31 109.9999923706055 29 C 101.0999908447266 21.5 88.49999237060547 19.39999961853027 76.59999084472656 24.29999923706055 C 64.69998931884766 29.29999923706055 57.39999008178711 39.69999694824219 56.49999237060547 51.29999923706055 C 56.19999313354492 54.39999771118164 59.39999389648438 56.70000076293945 62.19999313354492 55.5 L 62.29999160766602 55.5 C 63.69999313354492 54.90000152587891 64.69998931884766 53.59999847412109 64.79998779296875 52 C 65.59999847412109 43.20000076293945 70.90000152587891 35.20000076293945 79.69999694824219 31.60000038146973">
+                            </path>
+                        </svg>
+                        <svg class="Trazado_3" viewBox="66.912 52.976 55.008 34.169">
+                            <path id="Trazado_3"
+                                d="M 98.80000305175781 77.19999694824219 C 90 80.89999389648438 80.60000610351562 79.09999847412109 73.90000152587891 73.5 C 72.70000457763672 72.5 71.09999847412109 72.19999694824219 69.59999847412109 72.80000305175781 L 69.5 72.80000305175781 C 66.59999847412109 74 66 77.80000305175781 68.40000152587891 79.80000305175781 C 77.30000305175781 87.30000305175781 89.90000152587891 89.40000152587891 101.8000030517578 84.5 C 113.7000045776367 79.5 121 69.09999847412109 121.9000015258789 57.5 C 122.2000045776367 54.40000152587891 119 52.09999847412109 116.2000045776367 53.29999923706055 C 114.8000030517578 53.89999771118164 113.8000030517578 55.29999923706055 113.7000045776367 56.79999923706055 C 113 65.59999847412109 107.6999969482422 73.5 98.80000305175781 77.19999694824219">
+                            </path>
+                        </svg>
+                        <svg class="Trazado_4" viewBox="112.306 39.806 7.202 7.188">
+                            <path id="Trazado_4"
+                                d="M 117.3000030517578 46.70000076293945 C 115.5 47.5 113.3000030517578 46.60000228881836 112.6000061035156 44.79999923706055 C 111.8000030517578 43 112.7000045776367 40.79999923706055 114.5000076293945 40.09999847412109 C 116.3000106811523 39.29999923706055 118.5000076293945 40.19999694824219 119.2000045776367 42 C 120 43.79999923706055 119.1999969482422 45.90000152587891 117.3000030517578 46.70000076293945">
+                            </path>
+                        </svg>
+                        <svg class="Trazado_5" viewBox="60.006 61.606 7.188 7.188">
+                            <path id="Trazado_5"
+                                d="M 65 68.5 C 63.20000076293945 69.30000305175781 61 68.40000152587891 60.29999923706055 66.59999847412109 C 59.5 64.79999542236328 60.39999771118164 62.59999847412109 62.20000076293945 61.89999771118164 C 64 61.09999847412109 66.19999694824219 61.99999618530273 66.90000152587891 63.79999923706055 C 67.69999694824219 65.69999694824219 66.80000305175781 67.80000305175781 65 68.5">
+                            </path>
+                        </svg>
+                        <svg class="Trazado_6" viewBox="73.268 -0.046 31.57 18.446">
+                            <path id="Trazado_6"
+                                d="M 100.9000015258789 18.39999961853027 C 99.90000152587891 18.39999961853027 98.80000305175781 18 98 17.19999885559082 L 91.59999847412109 10.79999923706055 C 90.19999694824219 9.399999618530273 88 9.399999618530273 86.59999847412109 10.79999923706055 L 80.29999542236328 17.09999847412109 C 78.89999389648438 18.49999809265137 76.69999694824219 18.79999923706055 75.09999847412109 17.69999885559082 C 72.90000152587891 16.19999885559082 72.69999694824219 13.19999885559082 74.40000152587891 11.39999866485596 L 83.40000152587891 2.399998664855957 C 84.5 1.299998641014099 86 0.399998664855957 87.5 0.09999871253967285 C 90.09999847412109 -0.4000012874603271 92.69999694824219 0.3999987244606018 94.59999847412109 2.299998760223389 L 103.5999984741211 11.29999923706055 C 104.9000015258789 12.59999942779541 105.2999954223633 15.09999942779541 104.1999969482422 16.59999847412109 C 103.4000015258789 17.79999923706055 102.0999984741211 18.39999961853027 100.9000015258789 18.39999961853027">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main">
+            <section class="module" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h2 class="module-title font-alt">Our Services</h2>
+                            <div class="module-subtitle font-serif">A
+                                wonderful serenity has taken possession of my entire soul, like these
+                                sweet mornings of spring which I enjoy with my whole heart.</div>
+                        </div>
+                    </div>
+                    <div class="row multi-columns-row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-lightbulb"></span></div>
+                                <h3 class="features-title font-alt">Ideas and concepts</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-bike"></span></div>
+                                <h3 class="features-title font-alt">Optimised for speed</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-tools"></span></div>
+                                <h3 class="features-title font-alt">Designs &amp; interfaces</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-gears"></span></div>
+                                <h3 class="features-title font-alt">Highly customizable</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-tools-2"></span></div>
+                                <h3 class="features-title font-alt">Coding &amp; development</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-genius"></span></div>
+                                <h3 class="features-title font-alt">Features &amp; plugins</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-mobile"></span></div>
+                                <h3 class="features-title font-alt">Responsive design</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-item">
+                                <div class="features-icon"><span class="icon-lifesaver"></span></div>
+                                <h3 class="features-title font-alt">Dedicated support</h3>
+                                <p>Careful attention to detail and clean, well structured code ensures a smooth user
+                                    experience for all your visitors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="module-small bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h5 class="widget-title font-alt">About Titan</h5>
+                                <p>The languages only differ in their grammar, their pronunciation and their most common
+                                    words.</p>
+                                <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10<p>Email:<a
+                                        href="#">somecompany@example.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h5 class="widget-title font-alt">Recent Comments</h5>
+                                <ul class="icon-list">
+                                    <li>Maria on <a href="#">Designer Desk Essentials</a></li>
+                                    <li>John on <a href="#">Realistic Business Card Mockup</a></li>
+                                    <li>Andy on <a href="#">Eco bag Mockup</a></li>
+                                    <li>Jack on <a href="#">Bottle Mockup</a></li>
+                                    <li>Mark on <a href="#">Our trip to the Alps</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h5 class="widget-title font-alt">Blog Categories</h5>
+                                <ul class="icon-list">
+                                    <li><a href="#">Photography - 7</a></li>
+                                    <li><a href="#">Web Design - 3</a></li>
+                                    <li><a href="#">Illustration - 12</a></li>
+                                    <li><a href="#">Marketing - 1</a></li>
+                                    <li><a href="#">Wordpress - 16</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h5 class="widget-title font-alt">Popular Posts</h5>
+                                <ul class="widget-posts">
+                                    <li class="clearfix">
+                                        <div class="widget-posts-image"><a href="#"><img src="style/rp-1.jpg"
+                                                    alt="Post Thumbnail"></a></div>
+                                        <div class="widget-posts-body">
+                                            <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a>
+                                            </div>
+                                            <div class="widget-posts-meta">23 january</div>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="widget-posts-image"><a href="#"><img src="style/rp-2.jpg"
+                                                    alt="Post Thumbnail"></a></div>
+                                        <div class="widget-posts-body">
+                                            <div class="widget-posts-title"><a href="#">Realistic Business Card
+                                                    Mockup</a></div>
+                                            <div class="widget-posts-meta">15 February</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider-d">
+            <footer class="footer bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="copyright font-alt">© 2017&nbsp;<a
+                                    href="https://markup.themewagon.com/titan/index.html">TitaN</a>, All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a
+                                    href="#"><i class="fa fa-twitter"></i></a><a href="#"><i
+                                        class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+        <script async="" defer="defer" src="style/js"></script>
+    </main>
+    <!--  JavaScripts
+=============================================-->
+    <script src="style/jquery_004.js"></script>
+    <script src="style/bootstrap.js"></script>
+    <script src="style/wow.js"></script>
+    <script src="style/jquery_003.js"></script>
+    <script src="style/isotope.js"></script>
+    <script src="style/imagesloaded.js"></script>
+    <script src="style/jquery_002.js"></script>
+    <script src="style/owl.js"></script>
+    <script src="style/smoothscroll.js"></script>
+    <script src="style/jquery.js"></script>
+    <script src="style/jquery_005.js"></script>
+    <script async="" defer="defer" src="style/js"></script>
+    <script src="style/plugins.js"></script>
+    <script src="style/main.js"></script>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
