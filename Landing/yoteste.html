@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <style id="applicationStylesheet" type="text/css">
+
+
+@font-face {
+  font-family: "Niveau Grotesk";
+  src: url("NiveauGroteskRegular.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
     .mediaViewInfo {
         --web-view-name: 01 Landing;
         --web-view-id: ID01_Landing;
@@ -193,7 +204,18 @@
         transform: matrix(1, 0, 0, 1, 0, 0);
     }
 
+    /* changed */
+
+
+
+    #intro_2{
+    display:none;
+    opacity:0.0;
+    filter:alpha(opacity=0);
+	}	
+
     #FLECHA {
+        z-index: 1;
         position: absolute;
         width: 16.4px;
         height: 34.5px;
@@ -201,6 +223,89 @@
         top: 605px;
         overflow: visible;
     }
+
+    #FLECHA:hover {
+		transform: scale(1 ,1.2);
+	}
+
+    #ICONE_WHATSAPP:hover #Trazado_12{
+		fill: white;
+	}
+
+	#ICONE_WHATSAPP:hover #Trazado_11{
+		fill: white;
+	}
+
+	#ICONE_EMAIL:hover #Trazado_13{
+		fill: white;
+	}
+
+	#ICONE_EMAIL:hover #Trazado_14{
+		fill: white;
+	}
+
+    .clique {
+		color: white;
+
+	}
+	.clique:hover {
+		color: rgba(69,95,93,1);
+
+	}
+	.clique_cadastro {
+		color: white;
+	}
+	.clique_cadastro:hover {
+		color: rgba(192,229,216,1);
+	}
+
+
+    .SLIDER-1, .SLIDER-2, .SLIDER-3 {
+		position: absolute;
+		width: 683px;
+		height: 656px;
+		left: 683px;
+		top: 0px;
+		overflow: visible;
+	}
+
+	.SLIDER-1 {
+		animation:fade1 10s infinite;
+	}
+
+	.SLIDER-2 {
+		animation:fade2 10s infinite;
+	}
+
+	.SLIDER-3 {
+		animation:fade3 10s infinite;
+	}
+
+	@keyframes fade1 {
+		0%{opacity:1;}
+		25%{opacity:0;}
+		50%{opacity:0;}
+		75%{opacity:0;}
+		100%{opacity:1;}
+	}
+
+	@keyframes fade2 {
+		0%{opacity:0;}
+		25%{opacity:1;}
+		50%{opacity:0;}
+		75%{opacity:0;}
+		100%{opacity:0;}
+	}
+
+	@keyframes fade3 {
+		0%{opacity:0;}
+		25%{opacity:0;}
+		50%{opacity:1;}
+		75%{opacity:1;}
+		100%{opacity:0;}
+	}
+
+    /* Changed */
 
     #Lnea_1 {
         fill: transparent;
@@ -693,7 +798,7 @@
     }
 
     #left {
-        background: #aaa;
+        background: rgba(169,199,177,1);
         float: left;
         height: 100%;
         width: 50%;
@@ -706,6 +811,20 @@
         overflow: hidden;
         z-index: 1;
     }
+    #Aqui_voc_vai_descobrir_um_cami {
+		left: 157.592px;
+		top: 339px;
+		position: absolute;
+		overflow: visible;
+		width: 1051px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Niveau Grotesk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(192,229,216,1);
+	}
 </style>
 
 <head>
@@ -763,6 +882,7 @@
 
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" data-new-gr-c-s-check-loaded="8.880.0"
     data-gr-ext-installed="">
+    <div id="ID01_Landing__3">
     <main>
         <div class="page-loader" style="display: none;">
             <div class="loader" style="display: none;">Loading...</div>
@@ -772,6 +892,82 @@
             style="height: 976px; background-image: url(&quot;assets/images/section-10.jpg&quot;);">
             <div class="titan-caption">
                 <div class="">
+                    <!-- changed -->
+        <!-- <div id="Tela_1"> -->
+            
+                    
+        <a href="#Tela_2">
+            <div id="FLECHA" class="FLECHA">
+                <svg class="Lnea_1" viewBox="0 0 2 32.3">
+                    <path id="Lnea_1" d="M 0 0 L 0 32.29999923706055">
+                    </path>
+                </svg>
+                <svg class="Trazado_18" viewBox="0 24.3 16.4 10.2">
+                    <path id="Trazado_18" d="M 0 25.70000076293945 L 1.5 24.29999923706055 L 8.199999809265137 31.60000038146973 L 14.89999961853027 24.29999923706055 L 16.39999961853027 25.70000076293945 L 8.199999809265137 34.5 L 0 25.70000076293945 Z">
+                    </path>
+                </svg>
+            </div>
+        </a>
+        <div id="Role_a_tela_para_baixo_e_preen">
+			<span>Role a tela para baixo e preencha o cadastro.</span>
+		</div>
+		<div id="Aqui_voc_vai_descobrir_um_cami">
+			<span id="intro_2">Aqui você vai descobrir um caminho para fazer de <br/>sua segunda casa um passaporte para conhecer novos <br/>destinos e viver experiências incríveis.</span>
+		</div>
+		<div id="Obrigado_por_ser_um_dos_primei">
+			<span id="intro_1">Obrigado por ser um dos primeiros a chegar até aqui.<br/>É um prazer ter você com a gente no Yô.</span>
+		</div>
+        
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+		<script>
+			//Intercalando
+			// var ids = ["#intro_1","#intro_2"];
+
+			// var index = 0;
+
+			// $(document).ready(function() {
+				
+			// setInterval(function() {
+			
+				
+			// $(ids[index]).fadeOut()
+			
+			// index++
+			
+			
+			// if (index === ids.length)
+			// 	index = 0
+			// $(ids[index]).fadeTo('slow',1)
+
+			// }, 3000);
+			// });
+
+
+			//Apenas uma vez
+			var ids = ["#intro_1","#intro_2"];
+
+			var index = 0;
+
+			$(document).ready(function() {
+				
+			setTimeout(function() {
+			
+				
+			$(ids[0]).fadeOut()
+			
+
+			$(ids[1]).fadeTo('slow',1)
+
+			}, 3000);
+			});
+
+		
+		</script>
+
+        <!-- changed -->
+
+
                     <div id="LOGO" class="LOGO">
                         <div id="TROCA_DE_CASAS">
                             <span>TROCA DE CASAS</span>
@@ -808,20 +1004,30 @@
                         </svg>
                     </div>
 
-                    <svg class="Trazado_20" viewBox="4.2 9.901 2394.4 767.452">
-                        <path id="Trazado_20"
-                            d="M 4.199999809265137 464.3999938964844 C 288.2999877929688 334.1000061035156 616.9000244140625 376.8999938964844 875.2000122070312 578 C 938.2999877929688 627.0999755859375 997.7000122070312 685.2999877929688 1065.199951171875 723.7000122070312 C 1178.89990234375 788.4000244140625 1310.5 792.2000122070312 1429.89990234375 747.9000244140625 C 1549.2998046875 703.6000366210938 1656.799926757812 613.5 1745.299926757812 500.9000244140625 C 1841.199951171875 378.9000244140625 1916.89990234375 229.8000183105469 2023.699951171875 123.8000183105469 C 2130.5 17.80001831054688 2286.099853515625 -35.99998474121094 2398.599853515625 59.60002136230469">
-                        </path>
-                    </svg>
+                    
 
                 </div>
+                
             </div>
+            
         </section>
+
+
+    <!-- </div> -->
+        
+        
         <div class="home-full-height">
             <section class="module" id="services">
                 <div class="second_section">
                     <div id="left">
-                        o texto de apresentação do cadastro
+                        
+                        <svg class="Rectngulo_10">
+                            <rect id="Rectngulo_10" rx="0" ry="0" x="0" y="0" width="547" height="240.3">
+                            </rect>
+                        </svg>
+                        <div id="Se_quiser_saber_mais_sobre_o_f">
+                            <span>Se quiser saber mais sobre o funcionamento do <br/>Yô, <a href="https://www.w3schools.com" class="clique"> clique aqui</a> para ver nossa apresentação, <br/>nos mande um Whatsapp ou e-mail. <br/><br/><br/><br/>Estamos à disposição para te ajudar a dar os <br/>primeiros passos rumo a um universo de casas <br/>incríveis em todo o Brasil.</span>
+                        </div>
 
                     </div>
 
@@ -931,6 +1137,7 @@
     <script async="" defer="defer" src="style/js"></script>
     <script src="style/plugins.js"></script>
     <script src="style/main.js"></script>
+</div>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 

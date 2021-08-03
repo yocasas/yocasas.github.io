@@ -34,15 +34,16 @@ html {
 
 html {
     height: 100%;
+
 }
 
 	
 	#ID01_Landing__3 {
 		position: absolute;
-		width: 1366px;
+		width: 100%;
 		height: 1536px;
 		background-color: rgba(255,255,255,1);
-		overflow: hidden;
+		/* overflow: hidden; */
 		--web-view-name: 01 Landing – 3;
 		--web-view-id: ID01_Landing__3;
 		--web-scale-on-resize: true;
@@ -50,7 +51,7 @@ html {
 	}
 	#Tela_1 {
 		position: absolute;
-		width: 1366px;
+		width: 100%;
 		height: 768px;
 		left: 0px;
 		top: 0px;
@@ -62,18 +63,20 @@ html {
 	.BG_tela_1 {
 		overflow: visible;
 		position: absolute;
-		width: 1366px;
+		width: 100%;
 		height: 768px;
 		left: 0px;
 		top: 0px;
 		transform: matrix(1,0,0,1,0,0);
+		background-color: rgba(69,95,93,1);
 	}
 	#FLECHA {
 		z-index: 1;
 		position: absolute;
 		width: 16.4px;
 		height: 34.5px;
-		left: 675px;
+		/* left: 675px; */
+		left: 50%;
 		top: 605px;
 		overflow: visible;
 		
@@ -114,7 +117,9 @@ html {
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Role_a_tela_para_baixo_e_preen {
-		left: 416px;
+		/* left: 416px; */
+		left: 50%;
+		transform: translate(-50%);
 		top: 526.52px;
 		position: absolute;
 		overflow: visible;
@@ -128,11 +133,13 @@ html {
 		color: rgba(255,255,255,1);
 	}
 	#Aqui_voc_vai_descobrir_um_cami {
-		left: 157.592px;
+		/* left: 157.592px; */
+		left: 50%;
+		transform: translate(-50%);
 		top: 339px;
 		position: absolute;
 		overflow: visible;
-		width: 1051px;
+		width: 100%;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Niveau Grotesk;
@@ -145,12 +152,16 @@ html {
 		position: absolute;
 		width: 123px;
 		height: 114.219px;
-		left: 622px;
+		/* left: 622px; */
+		left: 50%;
+		transform: translate(-50%);
 		top: 117px;
 		overflow: visible;
 	}
 	#TROCA_DE_CASAS {
-		left: 0px;
+		/* left: 0px; */
+		left: 50%;
+		transform: translate(-50%);
 		top: 95.219px;
 		position: absolute;
 		overflow: visible;
@@ -237,7 +248,7 @@ html {
 	}
 	#Tela_2 {
 		position: absolute;
-		width: 1446.934px;
+		width: 100%;
 		height: 778.812px;
 		left: 0px;
 		top: 768px;
@@ -250,10 +261,11 @@ html {
 	.BG_tela_2 {
 		position: absolute;
 		overflow: visible;
-		width: 686px;
+		width: 50%;
 		height: 769px;
 		left: 0px;
 		top: 0px;
+		background-color: rgba(169,199,177,1);
 	}
 	#Rectngulo_10 {
 		fill: rgba(69,95,93,1);
@@ -261,10 +273,11 @@ html {
 	.Rectngulo_10 {
 		position: absolute;
 		overflow: visible;
-		width: 547px;
+		width: 40.9%;
 		height: 240.3px;
 		left: 139px;
 		top: 92.4px;
+		background-color: rgba(69,95,93,1);
 	}
 	#Se_quiser_saber_mais_sobre_o_f {
 		left: 182.622px;
@@ -467,9 +480,9 @@ html {
 	}
 	.SLIDER-1, .SLIDER-2, .SLIDER-3 {
 		position: absolute;
-		width: 683px;
+		width: 50%;
 		height: 656px;
-		left: 683px;
+		left: 50%;
 		top: 0px;
 		overflow: visible;
 	}
@@ -513,7 +526,7 @@ html {
 
 	#Footer {
 		position: absolute;
-		width: 1446.934px;
+		width: 100%;
 		height: 124.812px;
 		left: 0px;
 		top: 654px;
@@ -525,10 +538,11 @@ html {
 	.Footer_bg {
 		position: absolute;
 		overflow: visible;
-		width: 1366px;
+		width: 100%;
 		height: 115px;
 		left: 0px;
 		top: 0px;
+		background-color: rgba(69,95,93,1);
 	}
 	#Copyright_2021 {
 		left: 1135px;
@@ -730,11 +744,13 @@ html {
 
 
 	#Obrigado_por_ser_um_dos_primei {
-		left: 162.592px;
+		/* left: 162.592px; */
+		left: 50%;
+		transform: translate(-50%);
 		top: 339px;
 		position: absolute;
 		overflow: visible;
-		width: 1041px;
+		width: 100%;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Niveau Grotesk;
@@ -3586,9 +3602,9 @@ window.application = new Application();
 <body>
 <div id="ID01_Landing__3">
 	<div id="Tela_1">
-		<svg class="BG_tela_1" viewBox="0 0 1366 768">
-			<path id="BG_tela_1" d="M 0 0 L 1366 0 L 1366 768 L 0 768 L 0 0 Z">
-			</path>
+		<svg class="BG_tela_1">
+			<div id="BG_tela_1">
+			</div>
 		</svg>
 
 		<a href="#Tela_2">
@@ -3691,12 +3707,12 @@ window.application = new Application();
 	</div>
 	<div id="Tela_2">
 		<svg class="BG_tela_2">
-			<rect id="BG_tela_2" rx="0" ry="0" x="0" y="0" width="686" height="769">
-			</rect>
+			<div id="BG_tela_2">
+			</div>
 		</svg>
 		<svg class="Rectngulo_10">
-			<rect id="Rectngulo_10" rx="0" ry="0" x="0" y="0" width="547" height="240.3">
-			</rect>
+			<div id="Rectngulo_10" >
+			</div>
 		</svg>
 		<div id="Se_quiser_saber_mais_sobre_o_f">
 			<span>Se quiser saber mais sobre o funcionamento do <br/>Yô, <a href="https://www.w3schools.com" class="clique"> clique aqui</a> para ver nossa apresentação, <br/>nos mande um Whatsapp ou e-mail. <br/><br/><br/><br/>Estamos à disposição para te ajudar a dar os <br/>primeiros passos rumo a um universo de casas <br/>incríveis em todo o Brasil.</span>
@@ -3752,8 +3768,8 @@ window.application = new Application();
 			
 		<div id="Footer">
 			<svg class="Footer_bg">
-				<rect id="Footer_bg" rx="0" ry="0" x="0" y="0" width="1366" height="115">
-				</rect>
+				<div id="Footer_bg" >
+				</div>
 			</svg>
 			<div id="Copyright_2021">
 				<span>Copyright 2021</span>
@@ -3795,21 +3811,21 @@ window.application = new Application();
 					</div>
 				</div>
 			</div>
-			<svg class="Linha_footer" viewBox="10.066 9.988 373.934 122.812">
+			<!-- <svg class="Linha_footer" viewBox="10.066 9.988 373.934 122.812">
 				<path id="Linha_footer" d="M 384 96.90000152587891 C 266.3999938964844 75.5 157.8999938964844 -30.29999923706055 57.79999923706055 26.60000038146973 C 11.5 52.90000152587891 6.399997711181641 88.30000305175781 11.79999923706055 132.8000030517578">
 				</path>
-			</svg>
+			</svg> -->
 		</div>
 	</div>
 
 	<!-- LINHA ESTÁTICA - BUG DE NAO FUNCIONAR O CLIQUE NA SETA QUE ROLA PRA BAIXO -->
 
-	<div id="Linha_central">
+	<!-- <div id="Linha_central">
 		<svg class="Trazado_20" viewBox="4.2 9.901 2394.4 767.452">
 			<path id="Trazado_20" d="M 4.199999809265137 464.3999938964844 C 288.2999877929688 334.1000061035156 616.9000244140625 376.8999938964844 875.2000122070312 578 C 938.2999877929688 627.0999755859375 997.7000122070312 685.2999877929688 1065.199951171875 723.7000122070312 C 1178.89990234375 788.4000244140625 1310.5 792.2000122070312 1429.89990234375 747.9000244140625 C 1549.2998046875 703.6000366210938 1656.799926757812 613.5 1745.299926757812 500.9000244140625 C 1841.199951171875 378.9000244140625 1916.89990234375 229.8000183105469 2023.699951171875 123.8000183105469 C 2130.5 17.80001831054688 2286.099853515625 -35.99998474121094 2398.599853515625 59.60002136230469">
 			</path>
 		</svg>
-	</div>
+	</div> -->
 
 	
 	<!-- LINHA DINAMICA - NAO APARECE, O FUNDO TAMBÉM NAO É TRANSPARENTE -->
