@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>01 Landing – 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yocasas</title>
 	<style id="applicationStylesheet" type="text/css">
 		@font-face {
 			font-family: "Niveau Grotesk";
@@ -85,7 +85,7 @@
 			height: 34.5px;
 			/* left: 675px; */
 			left: 50%;
-			top: 605px;
+			top: 78%;
 			overflow: visible;
 
 		}
@@ -132,16 +132,17 @@
 			/* left: 416px; */
 			left: 50%;
 			transform: translate(-50%);
-			top: 526.52px;
+			/* top: 526.52px; */
+			top: 70%;
 			position: absolute;
 			overflow: visible;
-			width: 533px;
+			/* width: 533px; */
 			white-space: nowrap;
 			text-align: left;
 			font-family: Niveau Grotesk;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 28px;
+			font-size: calc(12px + 1vw);
 			color: rgba(255, 255, 255, 1);
 		}
 
@@ -158,7 +159,7 @@
 			font-family: Niveau Grotesk;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 45px;
+			font-size: calc(11px + 1vw);
 			color: rgba(192, 229, 216, 1);
 		}
 
@@ -515,7 +516,8 @@
 			font-family: Niveau Grotesk;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 45px;
+			font-size: calc(12px + 1.5vw);
+			/* font-size: 45px; */
 			color: rgba(192, 229, 216, 1);
 		}
 
@@ -662,17 +664,18 @@
 		}
 
 		#Copyright_2021 {
-			left: 1135px;
-			top: 56.859px;
+			left: 88%;
+			top: 50%;
 			position: absolute;
 			overflow: visible;
-			width: 92px;
+			width: 10%;
 			white-space: nowrap;
 			text-align: left;
 			font-family: Niveau Grotesk;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 14px;
+			/* font-size: 14px; */
+			font-size: calc(12px + 0.1vw);
 			color: rgba(192, 229, 216, 1);
 		}
 
@@ -900,34 +903,30 @@
 			font-family: Niveau Grotesk;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 45px;
+			font-size: calc(12px + 1vw);
 			color: rgba(192, 229, 216, 1);
 		}
 
 
 
-		/* @media screen and (max-width: 800px) {
+		@media only screen 
+		and (min-width: 320px) 
+		and (max-width: 812px) 
+		and (-webkit-min-device-pixel-ratio: 3) {
 
-			#Tela_1, #Tela_2 {
-				display:block;
-			}
+			/* #Linha_central {
+			display: none;
+			opacity: 0.0;
+			filter: alpha(opacity=0);
+		} */
 
-			#first_part, #second_part, #Footer, #BG_tela_2, #Rectngulo_10, 
-			#No_leva_mais_de_10_minutos_As_, 
-			#Clique___________para__preench,
-			#Se_quiser_saber_mais_sobre_o_f
-			{
-				display:block;
+		#Obrigado_por_ser_um_dos_primei {
+			background-color:red;
+		}
 
-			} */
+		
 
-
-
-
-
-
-
-}
+		}
 
 	</style>
 	<script id="applicationScript">
@@ -3899,7 +3898,7 @@
 					</div>
 				</svg>
 				<div id="No_leva_mais_de_10_minutos_As_">
-					<span>Não leva mais de 10 minutos! As perguntas são <br />objetivas e podem ser respondidas
+					<span>Não leva mais de 15 minutos! As perguntas são <br />objetivas e podem ser respondidas
 						rapidamente.</span>
 				</div>
 				<div id="Clique___________para__preench">
@@ -3911,10 +3910,10 @@
 			<div id="text_more">
 				<div id="Se_quiser_saber_mais_sobre_o_f">
 					<span>Se quiser saber mais sobre o funcionamento do <br />Yô, <a href="documents/YO_APRESENTAÇAO.pdf"
-							class="clique"> clique aqui</a> para ver nossa apresentação, <br />nos mande um Whatsapp ou
+							class="clique"> clique aqui</a> para ver nossa apresentação, <br />nos mande um Whatsapp ou um
 						e-mail. <br /><br /><br /><br />Estamos à disposição para te ajudar a dar os <br />primeiros
 						passos
-						rumo a um universo de casas <br />incríveis em todo o Brasil.</span>
+						rumo a um universo de casas <br />incríveis.</span>
 				</div>
 				<!-- <div id="Clique_aqui" class="Clique_aqui">
 			<div id="clique_aqui">
